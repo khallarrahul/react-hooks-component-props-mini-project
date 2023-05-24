@@ -3,8 +3,8 @@ import React from "react";
 function About(props) {
   return (
     <aside>
-      <img src={props.image} placeholder="https://via.placeholder.com/215" alt="blog logo" />
-      <p>{props.text}</p>
+      <img src={props.image || "https://via.placeholder.com/215"} alt="blog logo" />
+      <p>{props.about}</p>
     </aside>
   );
 }

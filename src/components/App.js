@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header name="Rahul's Tech Blog" />
-      <About image={blogData.image} text="Translating your language to code" />
+      <About image={blogData.image} about={blogData.about} />
       <ArticleList posts={blogData.posts} />
     </div>
   );

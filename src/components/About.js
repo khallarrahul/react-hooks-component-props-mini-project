@@ -1,9 +1,10 @@
 import React from "react";
 
 function About(props) {
+  const defaultImage = "https://via.placeholder.com/215";
   return (
     <aside>
-      <img src={props.image || "https://via.placeholder.com/215"} alt="blog logo" />
+      <img src={props.image || defaultImage} alt="blog logo" />
       <p>{props.about}</p>
     </aside>
   );

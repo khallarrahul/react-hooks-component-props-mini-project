@@ -2,14 +2,14 @@ import React from "react";
 import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
-
-console.log(blogData);
+import ArticleList from "./ArticleList";
 
 function App() {
   return (
     <div className="App">
       <Header name="Rahul's Tech Blog" />
       <About image={blogData.image} text="Translating your language to code" />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
